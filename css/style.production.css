@@ -378,7 +378,8 @@ button:focus,
   }
 
   #contact-form {
-    margin: 0;
+    padding: 2%;
+    margin: none;
     width: 100%;
   }
 }
