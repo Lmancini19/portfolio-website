@@ -25,11 +25,17 @@ body {
   min-height: 100vh;
 }
 
-h1,
-h2 {
+h1 {
   font-family: 'Nothing You Could Do', cursive;
   font-weight: bold;
   font-size: 2em;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Nothing You Could Do', cursive;
+  font-weight: bold;
+  font-size: 1.5em;
   text-align: center;
 }
 
@@ -69,6 +75,7 @@ h2 {
   padding: 4px;
   background-color: var(--white);
   border-bottom: solid;
+  border-bottom-width: 1px;
   border-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -235,9 +242,8 @@ svg {
   flex-flow: column wrap;
   margin-right: auto;
   margin-left: auto;
-  width: 40%;
+  width: 30%;
   height: auto;
-  padding: 1%;
   font-weight: 600;
 }
 
@@ -247,15 +253,22 @@ svg {
 #email,
 #message {
   border: 0;
-  border-bottom: 2px solid var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
   border-radius: 10px;
-  margin: 5px 0;
-  height: 30px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  height: 40px;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.15);
 }
 
 #message {
-  height: 70px;
+  height: 150px;
+  max-width: 100%;
+  margin-bottom: 2%;
+}
+
+textarea {
+  padding: 1%;
 }
 
 button,

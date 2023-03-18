@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Quicksand&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/style.production.css">
         <script src="js/tota11y.min.js"></script>
     </head>
     <body>
@@ -37,31 +37,22 @@
             </nav>
         </header>
         <div class="contact-info">
-            <h1>Contact</h1>
-            <p>
-                Laura Mancini<br>
-                5678 Mancini Rd<br>
-                Galway, NY 1234<br>
-                Tel: <a href="5166602367" aria-label="Call Laura">516.660.2367</a><br>
-                Email: <a href="mailto:laura.m.webdev@gmail.com">laura.m.webdev@gmail.com</a>
-            </p>
+            <h1>Interested in working together?</h1>
+            <h2> Send me a message! </h2>
         </div>
        
         <form action="/login-form-action" method="post" id="contact-form">
             <label class="standard-label" for="first-name">First Name:</label>
-            <input type="text" id="first-name" name="user_fname" required><br>
+            <input type="text" id="first-name" name="user_fname" required>
 
             <label class="standard-label" for="last-name">Last Name:</label>
-            <input type="text" id="last-name" name="user_lname" required><br>
-
-            <label class="standard-label" for="telephone">Telephone:</label>
-            <input type="tel" id="telephone" name="user_tel"><br>
+            <input type="text" id="last-name" name="user_lname" required>
 
             <label class="standard-label" for="email">E-mail:</label>
-            <input type="email" id="email" name="user_email" required><br>
+            <input type="email" id="email" name="user_email" required>
 
             <label class="standard-label" for="message">Message:</label>
-            <textarea maxlength="240" id="message" name="user_message" required></textarea><br>
+            <textarea maxlength="240" id="message" name="user_message" required></textarea>
 
             <button type="submit">Send Message</button>
           </form>
