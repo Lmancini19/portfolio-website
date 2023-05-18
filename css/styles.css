@@ -237,7 +237,7 @@ svg {
   text-align: center;
 }
 
-#contact-form {
+.input-wrapper {
   display: flex;
   flex-flow: column wrap;
   margin-right: auto;
@@ -249,7 +249,6 @@ svg {
 
 #first-name,
 #last-name,
-#telephone,
 #email,
 #message {
   border: 0;
@@ -269,6 +268,10 @@ svg {
 
 textarea {
   padding: 1%;
+}
+
+.error-message {
+  color: #fc0303;
 }
 
 button,
@@ -310,7 +313,7 @@ button:focus,
     flex-flow: column wrap;
   }
 
-  #contact-form {
+  .input-wrapper {
     padding: 2%;
     margin: none;
     width: 100%;

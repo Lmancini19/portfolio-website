@@ -1,3 +1,9 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 
 :root {
   --primary-color: #a3b8a9;
@@ -9,7 +15,7 @@
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -47,8 +53,8 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 600px;
   margin: auto;
   margin-top: 5%;
@@ -75,8 +81,8 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 
@@ -95,15 +101,15 @@ h2 {
 
 .page-header__item {
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
   padding: 10px;
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-align: right;
 }
 
@@ -137,8 +143,8 @@ a:focus {
   text-decoration: none;
   text-shadow: 1px 2px 2px var(--grey);
   -webkit-transition-delay: 100ms;
-  -o-transition-delay: 100ms;
-  transition-delay: 100ms;
+       -o-transition-delay: 100ms;
+          transition-delay: 100ms;
 }
 
 .homepage-button:hover,
@@ -148,8 +154,8 @@ a:focus {
   color: var(--white);
   text-shadow: none;
   -webkit-transition-delay: none;
-  -o-transition-delay: none;
-  transition-delay: none;
+       -o-transition-delay: none;
+          transition-delay: none;
 }
 
 a:active {
@@ -226,38 +232,38 @@ svg {
 @-webkit-keyframes flower-rotate {
   from {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 
   to {
     -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
+            transform: rotate(-10deg);
   }
 }
 
 @keyframes flower-rotate {
   from {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 
   to {
     -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
+            transform: rotate(-10deg);
   }
 }
 
 .flower {
   -webkit-animation-duration: 4s, 2s;
-  animation-duration: 4s, 2s;
+          animation-duration: 4s, 2s;
   -webkit-animation-name: color-change, flower-rotate;
-  animation-name: color-change, flower-rotate;
+          animation-name: color-change, flower-rotate;
   -webkit-animation-iteration-count: infinite, infinite;
-  animation-iteration-count: infinite, infinite;
+          animation-iteration-count: infinite, infinite;
   -webkit-animation-direction: alternate, alternate;
-  animation-direction: alternate, alternate;
+          animation-direction: alternate, alternate;
   -webkit-animation-timing-function: linear, linear;
-  animation-timing-function: linear, linear;
+          animation-timing-function: linear, linear;
 }
 
 .grid_item {
@@ -290,14 +296,14 @@ svg {
   text-align: center;
 }
 
-#contact-form {
+.input-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   margin-right: auto;
   margin-left: auto;
   width: 30%;
@@ -307,7 +313,6 @@ svg {
 
 #first-name,
 #last-name,
-#telephone,
 #email,
 #message {
   border: 0;
@@ -317,7 +322,7 @@ svg {
   margin-bottom: 1%;
   height: 40px;
   -webkit-box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.15);
 }
 
 #message {
@@ -328,6 +333,10 @@ svg {
 
 textarea {
   padding: 1%;
+}
+
+.error-message {
+  color: #fc0303;
 }
 
 button,
@@ -373,11 +382,11 @@ button:focus,
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-flow: column wrap;
-    flex-flow: column wrap;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
   }
 
-  #contact-form {
+  .input-wrapper {
     padding: 2%;
     margin: none;
     width: 100%;
