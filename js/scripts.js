@@ -21,22 +21,28 @@
         }
     }
 
-    function validatefirstName() {
+    function validateFirstName() {
         let value = firstName.value;
 
         if (!value) {
             showErrorMessage(firstName, 'First name is a required field.');
             return false;
         }
+
+        showErrorMessage(firstName, null);
+        return true;
     }
 
-    function validatelastName() {
+    function validateLastName() {
         let value = lastName.value;
 
         if (!value) {
             showErrorMessage(lastName, 'Last name is a required field.');
             return false;
         }
+
+        showErrorMessage(lastName, null);
+        return true;
     }
 
     function validateEmail () {
@@ -80,22 +86,22 @@
 
       
   function validateForm() {
-    let isValidFirstName = validatefirstName();
-    let isValidLastName = validatelastName();
+    let isValidFirstName = validateFirstName();
+    let isValidLastName = validateLastName();
     let isValidEmail = validateEmail();
     let isValidMessage = validateMessage();
     return isValidFirstName && isValidLastName && isValidEmail && isValidMessage;
   }
   
-  form.addEventListener('submit', (e) => {
-    e.preventDefault(); // Do not submit to the server
-    if (validateForm()) {
-      alert('Success!');
-    }
-  });
+    form.addEventListener('submit', (e) => {
+        e.preventDefault(); // Do not submit to the server
+        if (validateForm()) {
+            alert('Success!');
+        }
+    });
 
-    firstName.addEventListener('focusout', validatefirstName);
-    lastName.addEventListener('focusout', validatelastName);
+    firstName.addEventListener('focusout', validateFirstName);
+    lastName.addEventListener('focusout', validateLastName);
     emailInput.addEventListener('focusout', validateEmail);
     messageInput.addEventListener('focusout', validateMessage);
   
