@@ -28,6 +28,9 @@
             showErrorMessage(firstName, 'First name is a required field.');
             return false;
         }
+
+        showErrorMessage(firstName, null);
+        return true;
     }
 
     function validateLastName() {
@@ -37,6 +40,9 @@
             showErrorMessage(lastName, 'Last name is a required field.');
             return false;
         }
+
+        showErrorMessage(lastName, null);
+        return true;
     }
 
     function validateEmail () {
