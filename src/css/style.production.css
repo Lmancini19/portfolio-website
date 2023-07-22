@@ -47,6 +47,10 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  color: #ff0000;
+}
+
 .profile {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -168,7 +172,7 @@ a:active {
   padding: 4%;
 }
 
-table {
+/* table {
   width: 50%;
   border: solid;
   border-color: var(--black);
@@ -203,68 +207,7 @@ table td:last-child {
 
 table tr:last-child {
   border: 0;
-}
-
-svg {
-  height: 100px;
-}
-
-@-webkit-keyframes color-change {
-  0% {
-    fill: #fff;
-  }
-
-  100% {
-    fill: #374434;
-  }
-}
-
-@keyframes color-change {
-  0% {
-    fill: #fff;
-  }
-
-  100% {
-    fill: #374434;
-  }
-}
-
-@-webkit-keyframes flower-rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
-  }
-}
-
-@keyframes flower-rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
-  }
-}
-
-.flower {
-  -webkit-animation-duration: 4s, 2s;
-          animation-duration: 4s, 2s;
-  -webkit-animation-name: color-change, flower-rotate;
-          animation-name: color-change, flower-rotate;
-  -webkit-animation-iteration-count: infinite, infinite;
-          animation-iteration-count: infinite, infinite;
-  -webkit-animation-direction: alternate, alternate;
-          animation-direction: alternate, alternate;
-  -webkit-animation-timing-function: linear, linear;
-          animation-timing-function: linear, linear;
-}
+} */
 
 .grid_item {
   display: inline-block;
@@ -290,6 +233,13 @@ svg {
     margin: 0;
     text-align: center;
   }
+}
+
+.project_image {
+  width: 75%;
+  height: auto;
+  margin: auto;
+  border-radius: 20px;
 }
 
 .contact-info {
