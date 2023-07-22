@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Quicksand&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/normalize.css"> 
-        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <link rel="stylesheet" type="text/css" href="dist/styles.min.css">
     </head>
     <body>
         <header class="page-header">
@@ -39,39 +39,42 @@
             <h1>Work</h1>
             <div class="project-list">
                 <div class="grid_item">
-                    <h2>Project 1</h2>
+                    <h2>
+                    <a href="https://lmancini19.github.io/composer-catalog/" target="_blank">Composer Catalog</a>
+                    <a href="https://lmancini19.github.io/composer-catalog/" download target="_blank"><img src="img/composer_catalog.jpg" class="project_image" alt="An image of the Composer Catalog app"></a>
+                    </h2>
                     <p>
-                       This is where Project 1 will go.
+                        Composer Catalog is a web application that uses HTML, CSS, and Javascript to asynchronously fetch and display data on Classical Composers from an external API.
                     </p>
                 </div>
                 <div class="grid_item">
                     <h2>Project 2</h2>
                     <p>
-                       This is where Project 2 will go.
+                        Coming soon! 
                     </p>
                 </div>
                 <div class="grid_item">
                     <h2>Project 3</h2>
                     <p>
-                       This is where Project 3 will go.
+                        Coming soon! 
                     </p>
                 </div>
                 <div class="grid_item">
                     <h2>Project 4</h2>
                     <p>
-                       This is where Project 4 will go.
+                        Coming soon! 
                     </p>
                 </div>
                 <div class="grid_item">
                     <h2>Project 5</h2>
                     <p>
-                       This is where Project 5 will go.
+                        Coming soon! 
                     </p>
                 </div>
                 <div class="grid_item">
                     <h2>Project 6</h2>
                     <p>
-                       This is where Project 6 will go.
+                        Coming soon! 
                     </p>
                 </div>
             </div>
@@ -79,9 +82,12 @@
         <footer class="page-footer">
             <p>Find me on</p>
             <div class="social-media">
-            <a href="#"><img src="img/linkdin.svg" alt="LinkdIn Icon"></a>
+            <a href="https://www.linkedin.com/in/lauramancini19/" target="_blank"><img src="img/linkdin.svg" alt="LinkdIn Icon"></a>
             <a href="https://github.com/Lmancini19"  target="_blank"><img src="img/github.svg" alt="GitHub Icon"></a>
             </div>
        </footer>
+    <script src="js/promise-polyfill.js"></script>
+    <script src="js/fetch-polyfill.js"></script>
+    <script src="dist/scripts.min.js"></script>
     </body>
 </html>
